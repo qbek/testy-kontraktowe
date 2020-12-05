@@ -14,3 +14,31 @@ Przykład do demonstracji testów kontraktowych z wykorzystaniem Pact JVM / Mave
 
 3. Ściągnij / sklonuj kody z tego repozytorium
 
+## Zadanie
+
+Stwórz parę klient <-> serwer, która komunikuje się przez Rest API
+
+![Alt text](kontrakt-uml.png?raw=true "Kontrakt UML")
+
+**request**
+
+```json
+GET /userDetails
+Headers:
+   Accept: "application/json"`
+```
+
+**response**
+
+```json
+HTTP 200 OK
+Headers:
+   Content-type: "application/json"
+
+{
+    "firstName": "Jan",
+    "lastName": "Kowalski",
+    "age": 39
+}
+
+```
